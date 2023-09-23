@@ -1,0 +1,36 @@
+1. *Question: Sum of Even Numbers*
+   - Input: `[1, 2, 3, 4, 5, 6]`
+   - Expected Output: `12` (sum of even numbers)
+
+2. *Question: Factorial Calculation*
+   - Input: `5`
+   - Expected Output: `120` (5 factorial)
+
+
+4. *Question: Check Prime Number*
+   - Input: `7`
+   - Expected Output: `True` (7 is a prime number)
+
+5. *Question: Find Maximum Value*
+   - Input: `[10, 3, 15, 7, 2]`
+   - Expected Output: `15` (maximum value in the list)
+
+6. *Question: Palindrome Check*
+   - Input: `"racecar"`
+   - Expected Output: `True` (the word is a palindrome)
+
+7. *Question: Fibonacci Sequence*
+   - Input: `8`
+   - Expected Output: `[0, 1, 1, 2, 3, 5, 8, 13]` (first 8 numbers in the Fibonacci sequence)
+
+8. *Question: Calculate Average*
+   - Input: `[12, 15, 20, 10, 8]`
+   - Expected Output: `13` (average of the numbers)
+
+9. *Question: Count Occurrences*
+   - Input: `[1, 2, 2, 3, 4, 2, 5]`
+   - Expected Output: `3` (number of times '2' appears in the list)
+
+10. *Question: Power Calculation*
+    - Input: `(base: 2, exponent: 3)`
+    - Expected Output: `8` (2^3)
