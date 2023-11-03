@@ -5,11 +5,14 @@
 n = int(input('enter range'))
 arr=[]
 
-def f(n):
-	if n>0:
-		arr.append(n)
-		f(n-1)
+def f(n,arr):
+    if n>0:
+        f(n-1,arr)
+        
+        return arr.append(n)
+    else:
+        return arr
 
-f(n)
-r=arr.sort()
-print(r)
+f(n,arr)
+
+print(n,arr)
