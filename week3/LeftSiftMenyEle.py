@@ -1,6 +1,7 @@
 # input -> n=5 , arr= [1,2,3,4,5] , rotate=3
 #output -> arr=[4,5,1,2,3]
 
+
 n=int(input('enter range'))
 arr=[]
 for i in range(n):
@@ -15,12 +16,12 @@ def rotateArray(arr: [], n: int) -> []:
         temp.append(arr[i])
     
     for i in range(rotate,n):
-        arr[i-rotate]=arr[i]
+        arr.append(arr[i])
     for j in range(rotate , n):
         arr.append(temp[k])
         k+=1
     
     return arr
-
+############## Error  ################
 result = rotateArray(arr , n)
 print(result)

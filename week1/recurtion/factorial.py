@@ -1,12 +1,11 @@
 n=int(input('enter the number :'))
 
-def f(n,fact)->int:
-	if n == 0:
-		return fact
-	fact *= n 
-	f(n-1 , fact)
+def f(n)->int:
+	if n <=1:
+		return 1
+	return n*f(n-1)
 
 
-fact = 1
-res=f(n,fact)
+
+res=f(n)
 print(res)
