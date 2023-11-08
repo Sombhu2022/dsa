@@ -1,3 +1,4 @@
+#large and small element .
 n=int(input("enter the range of array: "))
 arr=[]
 

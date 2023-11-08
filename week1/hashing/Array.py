@@ -1,9 +1,11 @@
+#hashing 
 n=int(input("enter the range of array: "))
 arr=[]
 
 print("enter array element : ")
 for i in range(n):
     arr.append(int(input()))
+    
 
 hash = [0]*1000000 #hashing concept is apply to 
 
