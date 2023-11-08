@@ -8,11 +8,9 @@ arr=[]
 def f(n,arr):
     if n>0:
         f(n-1,arr)
-        
         return arr.append(n)
     else:
         return arr
 
 f(n,arr)
-
 print(n,arr)
