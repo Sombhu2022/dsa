@@ -1,3 +1,4 @@
+#hashing 2 example
 n=int(input("enter the range of array: "))
 arr=[]
 ans=[]
