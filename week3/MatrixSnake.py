@@ -1,12 +1,29 @@
-matrix = [[1,2,3,4,4],
-          [4,5,6,4,4],
-          [7,8,9,4,4]
+matrix = [[1,2,3,4],
+          [1,2,3,4],
+          [1,2,3,4],
+          [1,2,3,4],
+          [1,2,3,4],
+          [1,2,3,4]
+          
           ]
 row=len(matrix)
 col=len(matrix[0])
+
+def forword(inerarray):
+    for i in inerarray:
+        print(i,end="  ")
+ 
+def backtrack(inerarray):
+    for i in range(col-1,-1,-1):
+        print(inerarray[i],end="  ")       
+    
+
+
+print(0%2)
 for i in range(row):
-    for j in range():
-        print(matrix[i][j],end=" ")
-    print()
+    if i%2 == 0:
+        forword(matrix[i])
+    else :
+        backtrack(matrix[i])
     
 #in process ....
