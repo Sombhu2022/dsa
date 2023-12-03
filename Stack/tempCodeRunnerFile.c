@@ -1,0 +1,1 @@
+  printf("enter the range of the stack");
