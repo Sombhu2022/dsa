@@ -60,7 +60,7 @@ void pop(){
 
 int main(){
     
-    printf("enter the range of the stack");
+    //printf("enter the range of the stack");
     // scanf("%d",&n);
     push();
     push();
