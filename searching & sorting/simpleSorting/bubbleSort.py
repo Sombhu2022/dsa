@@ -10,8 +10,9 @@ def selectionSort(arr):
                 arr[j+1] , arr[j] = arr[j],arr[j+1]
     return arr
 
-arr=[5,3,9,1,2,0]
+arr=[5,3,-9,1,2,0]
 print(arr)
 selectionSort(arr)
 print("********after sorting**********")
 print(arr)
+

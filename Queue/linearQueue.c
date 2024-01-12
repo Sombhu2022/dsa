@@ -27,6 +27,7 @@ void printQueue(){
     
 }
 
+// time complexcity of enqueue in linear queue O(1)
 void enqueue(int element){
     if(rear+1 == MAX_SIZE){
         printf("Queue is alrady full");
@@ -39,6 +40,8 @@ void enqueue(int element){
    }
 }
 
+// time complexcity of dequeue in linear queue O(1)
+
 void dequeue(){
     
     if(empty()) 
@@ -47,14 +50,11 @@ void dequeue(){
     printf("Queue is alrady empty");
     }
     else{
-        int i;
-        int temp = Queue[front];
-        for ( i = 0; i <= rear-1; i++)
-        {
-            Queue[i] = Queue[i+1];
-        }
-       rear = rear-1; 
+        if( front == rear) 
+        {front = rear=-1;}
+       else{ front = front+1;
        printQueue();
+       }
     }
 }
 
