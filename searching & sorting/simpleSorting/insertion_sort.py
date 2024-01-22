@@ -11,7 +11,7 @@ for i in range(n):
     print(i , "step :" ,arr)
     while(j>0 and arr[j]>arr[j]):
         arr[j-1] , arr[j] = arr[j] , arr[j-1]
-        j=j-1
+        j=j-1 
     print(arr ,"\n\n")
     
     

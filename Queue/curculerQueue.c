@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define MAX_SIZE 10
+#define MAX_SIZE 4
 int Queue[10], front = -1, rear = -1;
 
 int empty()
@@ -25,7 +25,7 @@ void printQueue()
     }
     else if (rear >= front)
     {
-        for (i = front; i < rear + 1; i++)
+        for (i = front; i <=  rear ; i++)
         {
             printf("%d , %d |", i, Queue[i]);
         }
@@ -38,7 +38,7 @@ void printQueue()
             printf("%d , %d |", i, Queue[i]);
         }
 
-        for (i = 0; i < rear + 1; i++)
+        for (i = 0; i <= rear ; i++)
         {
             printf("%d , %d |", i, Queue[i]);
         }
@@ -80,7 +80,7 @@ int dequeue()
         }
         else
         {
-            front = (front + 1) % MAX_SIZE;
+            front = (front + 1) % MAX_SIZE; 
 
             return result;
         }
@@ -90,7 +90,7 @@ int dequeue()
 int main()
 {
     // printQueue();
-    int choice, n;
+    int choice, result , n;
     while (1)
     {
         printf("enter your choice : \n 1. insert \n 2.delete \n 3.display \n 4.exit\n");
@@ -104,18 +104,19 @@ int main()
             enqueue(n);
             break;
         case 2:
-            dequeue();
+           result = dequeue();
+           printf(" delete %d \n" , result);
             break;
         case 3:
             printQueue();
             break;
         case 4:
             printf("exit");
-            return 0;
+            return 1;
 
         default:
             printf("choice valid option");
-            break;
+            return 1;
         }
    
     }

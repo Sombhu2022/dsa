@@ -1,10 +1,14 @@
-class link_list:
+class node:
     def __init__(self , data):
         self.data = data 
         self.next = None
-    head = link_list(None) 
+    head = int() 
+    
     def add(self):
         return self.data
     def insert(self , ele):
-        if()
-obj = link_list(30)
+        newNode = node()
+        if head is None :
+            print("")
+            return
+obj = node(30)
