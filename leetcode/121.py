@@ -6,6 +6,7 @@ left = 0 #Buy
 right = 1 #Sell
 max_profit = 0
 prices = [7,1,5,3,6,4]
+
 while right < len(prices):
     currentProfit = prices[right] - prices[left] #our current Profit
     if prices[left] < prices[right]:

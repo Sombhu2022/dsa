@@ -1,3 +1,4 @@
-example = "snow world"
-# example[3] = 's'
-# print(example)
+x = "abcdef"
+i = "a"
+while i in x:
+    print(i, end = " ")
