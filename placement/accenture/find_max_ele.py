@@ -12,5 +12,5 @@ def fun(arr , n):
 arr = [ 2 , 7 , 5, 9, 45 , 34 ,7 ]
 max_val , max_index = fun(arr , len(arr))
 print(max_val , max_index)
-print(4 == float(4))
+
         
